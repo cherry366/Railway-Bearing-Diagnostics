@@ -54,7 +54,7 @@
 ## 目录结构
 
 ```
-railway-bearing-diagnostics/
+Railway-Bearing-Diagnostics/
 ├── code/
 │   ├── config.py                  # 统一路径（只读仓库 + work/ 运行目录）
 │   ├── requirements.txt
