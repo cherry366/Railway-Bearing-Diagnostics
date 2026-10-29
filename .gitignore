@@ -1,0 +1,17 @@
+# 运行产物
+work/
+__pycache__/
+*.py[cod]
+*.egg-info/
+
+# 数据（体积大，按需下载，见 data/README.md）
+data/raw/
+*.mat
+
+# 编辑器 / 系统
+.vs/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+~$*

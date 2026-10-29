@@ -1,0 +1,189 @@
+{
+  "training_time": "2025-09-23 18:48:23",
+  "best_model": "XGBoost",
+  "best_accuracy": 0.9991113744075829,
+  "model_performance": [
+    {
+      "Model": "XGBoost",
+      "Accuracy": 0.9991113744075829,
+      "Precision": 0.9991120848609434,
+      "Recall": 0.9991113744075829,
+      "F1-Score": 0.9991113738776813
+    },
+    {
+      "Model": "Logistic Regression",
+      "Accuracy": 0.9167061611374407,
+      "Precision": 0.9256115390358107,
+      "Recall": 0.9167061611374407,
+      "F1-Score": 0.9161741165793821
+    },
+    {
+      "Model": "Naive Bayes",
+      "Accuracy": 0.8888625592417062,
+      "Precision": 0.8968407434442064,
+      "Recall": 0.8888625592417062,
+      "F1-Score": 0.8879177016075361
+    },
+    {
+      "Model": "SVM",
+      "Accuracy": 0.9654620853080569,
+      "Precision": 0.9680302997730335,
+      "Recall": 0.9654620853080569,
+      "F1-Score": 0.9653938187027811
+    },
+    {
+      "Model": "BP Neural Network",
+      "Accuracy": 0.9971563981042654,
+      "Precision": 0.9971635569802874,
+      "Recall": 0.9971563981042654,
+      "F1-Score": 0.9971563816441111
+    }
+  ],
+  "feature_columns": [
+    "PC1",
+    "PC2",
+    "PC3",
+    "PC4",
+    "PC5",
+    "PC6",
+    "PC7",
+    "PC8",
+    "PC9",
+    "PC10",
+    "PC11",
+    "PC12",
+    "PC13"
+  ],
+  "class_names": [
+    "DE-B",
+    "DE-IR",
+    "DE-OR",
+    "FE-B",
+    "FE-IR",
+    "FE-OR",
+    "N"
+  ],
+  "training_data_shape": [
+    39386,
+    13
+  ],
+  "test_data_shape": [
+    16880,
+    13
+  ],
+  "model_parameters": {
+    "test_size": 0.3,
+    "random_state": 42,
+    "stratify": true
+  },
+  "model_configs": {
+    "XGBoost": {
+      "objective": "multi:softprob",
+      "base_score": null,
+      "booster": null,
+      "callbacks": null,
+      "colsample_bylevel": null,
+      "colsample_bynode": null,
+      "colsample_bytree": null,
+      "device": null,
+      "early_stopping_rounds": null,
+      "enable_categorical": false,
+      "eval_metric": "mlogloss",
+      "feature_types": null,
+      "feature_weights": null,
+      "gamma": null,
+      "grow_policy": null,
+      "importance_type": null,
+      "interaction_constraints": null,
+      "learning_rate": 0.1,
+      "max_bin": null,
+      "max_cat_threshold": null,
+      "max_cat_to_onehot": null,
+      "max_delta_step": null,
+      "max_depth": 6,
+      "max_leaves": null,
+      "min_child_weight": null,
+      "missing": NaN,
+      "monotone_constraints": null,
+      "multi_strategy": null,
+      "n_estimators": 100,
+      "n_jobs": null,
+      "num_parallel_tree": null,
+      "random_state": 42,
+      "reg_alpha": null,
+      "reg_lambda": null,
+      "sampling_method": null,
+      "scale_pos_weight": null,
+      "subsample": null,
+      "tree_method": null,
+      "validate_parameters": null,
+      "verbosity": null
+    },
+    "Logistic Regression": {
+      "C": 1.0,
+      "class_weight": null,
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": null,
+      "max_iter": 1000,
+      "multi_class": "ovr",
+      "n_jobs": null,
+      "penalty": "l2",
+      "random_state": 42,
+      "solver": "lbfgs",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "Naive Bayes": {
+      "priors": null,
+      "var_smoothing": 1e-09
+    },
+    "SVM": {
+      "C": 1.0,
+      "break_ties": false,
+      "cache_size": 200,
+      "class_weight": null,
+      "coef0": 0.0,
+      "decision_function_shape": "ovr",
+      "degree": 3,
+      "gamma": "scale",
+      "kernel": "rbf",
+      "max_iter": -1,
+      "probability": true,
+      "random_state": 42,
+      "shrinking": true,
+      "tol": 0.001,
+      "verbose": false
+    },
+    "BP Neural Network": {
+      "activation": "relu",
+      "alpha": 0.0001,
+      "batch_size": "auto",
+      "beta_1": 0.9,
+      "beta_2": 0.999,
+      "early_stopping": true,
+      "epsilon": 1e-08,
+      "hidden_layer_sizes": [
+        100,
+        50
+      ],
+      "learning_rate": "constant",
+      "learning_rate_init": 0.001,
+      "max_fun": 15000,
+      "max_iter": 1000,
+      "momentum": 0.9,
+      "n_iter_no_change": 10,
+      "nesterovs_momentum": true,
+      "power_t": 0.5,
+      "random_state": 42,
+      "shuffle": true,
+      "solver": "adam",
+      "tol": 0.0001,
+      "validation_fraction": 0.1,
+      "verbose": false,
+      "warm_start": false
+    }
+  }
+}
