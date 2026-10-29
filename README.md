@@ -54,7 +54,7 @@
 ## 目录结构
 
 ```
-bearing-transfer-diagnosis/
+railway-bearing-diagnostics/
 ├── code/
 │   ├── config.py                  # 统一路径（只读仓库 + work/ 运行目录）
 │   ├── requirements.txt
@@ -78,7 +78,7 @@ bearing-transfer-diagnosis/
 │   ├── processed/                 # 仓库自带的中间结果（可直接跑训练/迁移）
 │   └── README.md
 ├── docs/
-│   ├── paper/                     # 论文 PDF + 赛题说明
+│   ├── paper/                     # 获奖论文 PDF + 官方说明文档
 │   ├── 01_problem_and_data.md
 │   ├── 02_feature_engineering.md
 │   ├── 03_source_diagnosis.md
